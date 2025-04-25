@@ -1,0 +1,336 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Yaowarat Road</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff9f4;
+      color: #333;
+    }
+  </style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: white;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+      color: #004080;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background-color: black;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+        border-top: 1px solid #ccc;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    .content {
+      padding: 30px;
+      height: 1500px;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  background-color: #e60000;
+  padding: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #cc0000;
+  font-weight: bold;
+  margin: 50px 0 15px 0;
+  text-align: center;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background-color: #cc0000;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 10px 20px;
+}
+.content-center {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./img/Logo.PNG" alt="โลโก้กลุ่ม">
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="http://127.0.0.1:5500/Homepage.html">หน้าแรก</a></li>
+      <li><a href="http://127.0.0.1:5500/food.html">ร้านอาหาร</a></li>
+      <li><a href="http://127.0.0.1:5500/dessert.html">ร้านขนม</a></li>
+      <li><a href="http://127.0.0.1:5500/photo.html">จุดถ่ายรูป</a></li>
+      <li><a href="http://127.0.0.1:5500/aboutus.html">เกี่ยวกับเรา</a></li>
+    </ul>
+  </nav>
+
+  <div class="content-center">
+    <h1 style="background-color:FF0000;" align=center>10 ร้านเด็ด!!ย่านเยาวราช</h1>
+    <p style="color:orange;" align=center> รวมอาหารเด็ดในเยาวราชที่ห้ามพลาด ทั้งเมนูคาวร้อนๆและกลิ่นหอมเย้ายวนใจ</p>
+    <div class="section-title">1.ก๋วยจั๊บอ้วนโภชนา</div>
+    <center><img src="./img/01.jpg" width="600" height="400"></center>
+     <p style="text-indent: 2.5em;">พูดถึงอาหารจานเด็ดในเยาวราช ก็ต้องคิดถึงเมนูก๋วยจั๊บเยาวราชและเราขอแนะนำร้าน<span style="color:#FF6600">ก๋วยจั๊บอ้วนโภชนา</span>ในตำนานหน้าโรงหนังเก่าย่านเยาวราชนั่นเองค่ะ
+      ความดีงามของก๋วยจั๊บร้านนี้อยู่ตรงที่เครื่องเทศในน้ำซุปจัดจ้านมากๆ หอมกลิ่นพริกไทยสุดๆ
+      ยิ่งถ้าหากใครที่ชอบหมูกรอบและเครื่องในจะต้องฟินอย่างแน่นอนการันตีความอร่อยด้วยดีกรี Michelin BibGourmand ด้วยนะ </p>
+    <p>• พิกัด : <span style="color:red">https://goo.gl/maps/TD6N8G2mmx9icfmc8</span></p>
+    <p>• ที่อยู่ : ถนนเยาวราช แขวงจักรวรรดิ์ กรุงเทพฯ</p>
+    <p>• ร้านเปิดบริการ : 18.00 - 03.00 น.</p>
+    <p>• โทร : ไม่ระบุ</p>
+    <p>• ที่จอดรถ : ไม่มี</p>
+    <p>• เว็บไซต์ : ไม่ระบุ</p>
+
+    <div class="section-title">2.บะหมี่มังกรขาว</div>
+    <center><img src="img/02.jpg" width="600" height="400"></center>
+    <p style="text-indent: 2.5em;">มาเยาวราชทั้งทีก็ต้องลองบะหมี่กันซะหน่อยที่<span style="color:#FF6600">ร้านมังกรขาว</span>จุดเด่นของร้านนี้อยู่ตรงที่บะหมี่แห้งปู
+    เจ้าของร้านให้ปูเยอะมาก!สมราคาสุดๆ ส่วนถ้าใครที่ชอบกินแบบน้ำ น้ำซุปที่นี่หวานหอมเข้มข้นสุดๆ</p>
+    <p>• พิกัด : <span style="color:red">https://goo.gl/maps/UvQ3DKe5K5N575YWA</span></p>
+    <p>• ที่อยู่ : ถนนเยาวราช แขวงจักรวรรดิ์ กรุงเทพฯ</p>
+    <p>• ร้านเปิดบริการ : 18.00 - 23.00 น.(หยุดวันจันทร์)</p>
+    <p>• โทร : 06-5392-2356</p>
+    <p>• ที่จอดรถ : ไม่มี</p>
+    <p>• เว็บไซด์ : <span style="color:red">https://www.facebook.com/มังกรขาว เยาวราช</span></p>
+
+    <div class="section-title">3.เล่าลี่ หูฉลาม</div>
+    <center><img src="img/03.jpg" width="600" height="400"></center>
+      <p style="text-indent: 2.5em;">อีกหนึ่งเมนูที่ห้ามพลาด เมื่อมาถึงเยาวราชก็คือหูฉลามน้ำแดง ถ้ายังคิดชื่อร้านไม่ออก เราขอแนะนำ<span style="color:#FF6600">ร้านเล่าลี่หูฉลาม</span>
+      ความเก๋าของร้านนี้อยู่ตรงที่ความเก่าแก่เพราะที่นี่เปิดให้บริการมาเป็นเวลายาวนาน รสชาติของเมนูหูฉลามก็ถูกส่งต่อรุ่นต่อรุ่น อย่างเป็นความลับ เอาเป็นว่ามันดีมากไปลองกันเถอะค่ะ</p>
+    <p>• พิกัด : <span style="color:red">https://goo.gl/maps/Aq4PjEsc3R5SXSw18</span></p>
+    <p>• ที่อยู่ : ถนนเยาวราช แขวงจักรวรรดิ์ กรุงเทพฯ</p>
+    <p>• ร้านเปิดบริการ : 11.00 - 21.00 น.</p>
+    <p>• โทร : 0-2223-0325</p>
+    <p>• ที่จอดรถ : ไม่มี</p>
+    <p>• เว็บไซด์ : <span style="color:red">https://www.facebook.com/เล่าลี่ เยาวราช</span></p>
+
+    <div class="section-title">4.ผัดไทยโอเคตลาดเก่าเยาวราช</div>
+    <center><img src="img/04.jpg" width="600" height="400"></center>
+      <p style="text-indent: 2.5em;">ผัดไทยโอเคตลาดเก่าเยาวราช สาวกคนรักเมนูเส้นต้องรู้จักร้านนี้อย่างแน่นอน 
+      เพราะเป็นผัดไทยอีกร้านที่คนพูดถึงกันเยอะ ที่นี่มีลูกค้าทั้งชาวต่างชาติและคนไทยที่ถูกอดถูกใจกันมากมาย เพราะด้วยรสชาติที่ฟินละมุนในปาก
+      แล้วราคาก็เบาสบายกระเป๋าอีกด้วย</p>
+    <p>• พิกัด : <span style="color:red">https://goo.gl/maps/E6mNzDvtdWSNbmwaA</span></p>
+    <p>• ที่อยู่ : ซอยเยาวราช23(ซอยอิสรานุภาพ) แขวงจักรวรรดิ์ กรุงเทพฯ</p>
+    <p>• ร้านเปิดบริการ : 17.30 - 23.00 น.(หยุดวันจันทร์)</p>
+    <p>• โทร : 08-1632-3459</p>
+    <p>• ที่จอดรถ : ไม่มี</p>
+    <p>• เว็บไซด์ : <span style="color:red">https://www.facebook.com/PadThaiOK</span></p>
+
+    <div class="section-title">5.T&K Seafood Restuarant</div>
+    <center><img src="img/05.jpg" width="600" height="400"></center>
+      <p style="text-indent: 2.5em;">ข้ามขั้นไปกินซีฟู้ดที่เยาวราชกันบ้างดีกว่าสำหรับ<span style="color:#FF6600">ร้านT&K Seafood Restuarant</span>หรือที่คนไทยรู้จักกันดีว่าร้านเสื้อเขียว
+      ร้านนี้มีเมนูซีฟู้ดเกือบทุกสิ่งอย่างในทะเลมาให้เลือกลิ้มลองกันมากมาย จุดเด่นของร้านนี้อยู่ตรงน้ำจิ้มซีฟู้ดรสเด็ดแซ่บไปถึงทรวง
+      รวมถึงความสดของวัตถุดิบที่ไม่ต้องเสียเวลาไปนั่งกินไกลถึงริมทะเล</p>
+    <p>• พิกัด : <span style="color:red">https://goo.gl/maps/Q961kBgB7RzPeWYQA</span></p>
+    <p>• ที่อยู่ : ถนนผดุงข้าว แขวงสัมพันธวงศ์ กรุงเทพฯ</p>
+    <p>• ร้านเปิดบริการ : 16.00 - 02.00 น.</p>
+    <p>• โทร : 0-2223-4519</p>
+    <p>• ที่จอดรถ : ไม่มี</p>
+    <p>• เว็บไซด์ : <span style="color:red">https://www.facebook.com/tkseafood</span></p>
+
+    <div class="section-title">6.ยู้ลูกชิ้นปลาเยาวราช</div>
+    <center><img src="img/06.jpg" width="600" height="400"></center>
+    <p style="text-indent: 2.5em;">ยู้ลูกชิ้นปลาเยาวราช<span style="color:#FF6600">ร้านก๋วยเตี๋ยวลูกชิ้นปลาเจ้าเก่าแก่ย่านเยาวราช</span>เปิดให้บริการมานานหลายสิบปีมีเมนูก๋วยเตี๋ยวให้เลือกมากมาย
+      เช่น ต้มยำวุ้นเส้น เกาเหลาต้มยำ บะหมี่ต้มยำ ในราคาเริ่มต้น 80 บาท นอกจากนี้ที่ร้านมีจำหน่ายลูกชิ้นปลาทำเองอีกด้วยค่ะ</p>
+    <p>• พิกัด : <span style="color:red">https://goo.gl/maps/ejStWexZMv6QRsUD8</span></p>
+    <p>• ที่อยู่ : ถนนผดุงข้าว แขวงสัมพันธวงศ์ กรุงเทพฯ</p>
+    <p>• ร้านเปิดบริการ : 08.00 - 21.00น.</p>
+    <p>• โทร : 08-9782-7777</p>
+    <p>• ที่จอดรถ : ไม่มี</p>
+    <p>• เว็บไซด์ : <span style="color:red">//www.facebook.com/YooFishBall/</span></p>
+
+    <div class="section-title">7.ร้านป้าจินหอยแครงลวก</div>
+    <center><img src="img/07.jpg" width="600" height="400"></center>
+      <p style="text-indent: 2.5em;">สายหอยห้ามพลาดร้านนี้เด็ดขาด อีกหนึ่งร้านที่เราแนะนำให้มาลองมากๆ สำหรับ<span style="color:#FF6600">ร้านป้าจินหอยแครงลวก</span>
+      ความเด็ดอยู่ตรงที่วัตถุดิบอาหารซีฟู้ดที่นี่ดีงามมาก สด ไซส์ยักษ์ ไม่มีกลิ่นคาว
+      ส่วนเรื่องราคาก็ไม่แรงมากคุ้มค่ากับเงินที่เสียไปแน่นอน</p>
+    <p>• พิกัด : <span style="color:red">https://goo.gl/maps/d4W6XFFVUjFZEXss9</span></p>
+    <p>• ที่อยู่ : ซอยเท็กซัส ถนนผดุงข้าว แขวงจักรวรรดิ์ กรุงเทพฯ</p>
+    <p>• ร้านเปิดบริการ : 18.00 - 24.00 น.(หยุดวันจันทร์)</p>
+    <p>• โทร : 08-1795-1839</p>
+    <p>• ที่จอดรถ : ไม่มี</p>
+    <p>• เว็บไซด์ : <span style="color:red">//www.facebook.com/ร้านป้าจินหอยแครงลวกซอยเท็กซัส</span></p>
+
+    <div class="section-title">8.หมูตุ๋นเอ็นตุ๋นน้ำแดงหม้อดิน</div>
+    <center><img src="img/08.jpg" width="600" height="400"></center>
+      <p style="text-indent: 2.5em;">ไปซดน้ำซุปแดงร้อนๆกัน<span style="color:#FF6600">ที่ร้านหมูตุ๋นเอ็นตุ๋นน้ำแดงหม้อดิน</span>กันบ้างดีกว่าค่ะ
+      ความดีงามมันอยู่ที่ความเปื่อยของเนื้อหมูและเอ็นที่ถูกตุ๋นหลายชั่วโมง รสชาติหวาน หอม เข้มข้นสุดๆ </p>
+      <p>• พิกัด : <span style="color:red">https://goo.gl/maps/XkGQ9C5mgen5H26B8</span></p>
+      <p>• ที่อยู่ : ถนนเยาวราช แขวงจักรวรรดิ์ กรุงเทพฯ</p>
+      <p>• ร้านเปิดบริการ : 19.00 - 24.00 น.(หยุดวันจันทร์)</p>
+      <p>• โทร : 08-00200-0096</p>
+      <p>• ที่จอดรถ : ไม่มี</p>
+      <p>• เว็บไซด์ : <span style="color:red">//www.facebook.com/หมูตุ๋น เยาวราช</span></p>
+  
+      <div class="section-title">9.ครัวพรละมัย</div>
+      <center><img src="img/09.jpg" width="600" height="400"></center>
+        <p style="text-indent: 2.5em;">มาถึงคิวร้านเด็ดอีกหนึ่งร้านในย่านเยาวราช <span style="color:#FF6600">ที่ร้านครัวพรละมัย</span>ร้านนี้มีหลากหลายเมนู
+        ที่เสิร์ฟมาบนกระทะร้อน ไม่ว่าจะเป็น สุกี้ ก๋วยเตี๋ยวคั่วไก่ เสิร์ฟมาแบบร้อนฉู่ฉ่า
+        บอกเลยว่าอร่อยเด็ด ถึงใจ โดยเฉพาะเมนูราดหน้าเส้นกรอบ น้ำราดมาเดือดๆ กับเส้นใหญ่ทอดกรอบ</p>
+      <p>• พิกัด : <span style="color:red"> https://goo.gl/maps/WsYCyA3558qvg2fi7 </span></p>
+      <p>• ที่อยู่ : ถนนแปลงนาม แขวง/เขตสัม พันธวงศ์ กรุงเทพฯ</p>
+      <p>• ร้านเปิดบริการ : 16.00 - 21.00 น.(หยุดวันจันทร์)</p>
+      <p>• โทร : 09-9249-5414</p>
+      <p>• ที่จอดรถ : ไม่มี</p>
+      <p>• เว็บไซด์ : <span style="color:red">https://www.facebook.com/kruapornlamai/</span></p>
+  
+      <div class="section-title">10.น้องกาย&น้องเก้าปลาหมึกย่าง</div>
+      <center><img src="img/10.jpg" width="600" height="400"></center>
+        <p style="text-indent: 2.5em;">ใครที่มีอาการร่างกายต้องการความแซ่บ ต้องมาที่ร้านนี้เลย<span style="color:#FF6600">น้องกาย&น้องเก้าปลาหมึกย่างเยาวราช</span>
+        อีกหนึ่งร้านอร่อยคิวยาว ที่ทุกคนเต็มใจจะรอเพราะเค้ามีปลาหมึกสดๆ ขนมาขายกันทุกสัดส่วนถึงปลาหมึกจะกองเป็นภูเขาแต่ขายหมดทุกวัน 
+        ทำให้ไม่ต้องกังวลเรื่องความสดเลยจ้า นอกจากนี้น้ำจิ้มซีฟู้ดของร้านนี้ก็แซ่บอย่าบอกใครเลยจ้า </p>
+      <p>• พิกัด : <span style="color:red"> https://goo.gl/maps/VN2YoWWH7CEw5KaB9 </span></p>
+      <p>• ที่อยู่ : ซอยเยาวราช 22 แขวงจักรวรรดิ์ เขตสัมพันธวงศ์ กรุงเทพฯ </p>
+      <p>• ร้านเปิดบริการ : 17.45 - 22.45 น.(หยุดวันจันทร์)</p>
+      <p>• โทร : 08-1901-9950</p>
+      <p>• ที่จอดรถ : ไม่มี</p>
+      <p>• เว็บไซด์ : ไม่ระบุ</p>
+      <script>
+        function toggleMenu() {
+        const nav = document.getElementById('navLinks');
+        nav.classList.toggle('active');
+      }
+      </script>
+  
+      <!--footer-->
+      <footer>
+        <p>จัดทำโดย กลุ่ม Webtorung</p>
+        <p>สมาชิก: ภูริวัฑฒ์ | ปาลิกา | ทรรศนีย์พร | กมลชนก</p>
+        <p>Email: webtorung@gmail.com</p>
+        <p>&copy; สำหรับโปรเจคกลุ่มรายวิชา 520112-165.</p>
+      </footer>
+  
+      <script>
+        function toggleMenu() {
+        const nav = document.getElementById('navLinks');
+        nav.classList.toggle('active');
+      }
+      </script>
+  </body>
+  
+  </html>

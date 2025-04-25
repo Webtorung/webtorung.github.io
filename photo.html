@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Yaowarat Road</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: white;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+      color: #004080;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background-color: black;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+        border-top: 1px solid #ccc;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    .content {
+      padding: 30px;
+      height: 1500px;
+    }
+         footer {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.maitree-medium {
+  font-family: "Maitree", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.content-center {
+    text-align: center;
+  }
+
+  .content-center img {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .text-box {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+        <img src="./img/Logo.PNG" alt="Logo">
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="http://127.0.0.1:5500/Homepage.html">หน้าแรก</a></li>
+      <li><a href="http://127.0.0.1:5500/food.html">ร้านอาหาร</a></li>
+      <li><a href="http://127.0.0.1:5500/dessert.html">ร้านขนม</a></li>
+      <li><a href="http://127.0.0.1:5500/photo.html">จุดถ่ายรูป</a></li>
+      <li><a href="http://127.0.0.1:5500/aboutus.html">เกี่ยวกับเรา</a></li>
+    </ul>
+  </nav>
+
+</head>
+
+<body>
+  <div class="content-center">
+    <h1 class="maitree-medium " style="color: red;"> 5 จุดถ่ายรูปในเยาวราช</h1>
+    <p style="margin-bottom: 50px; font-weight:Serif; "> มุมถ่ายรูปสุดฮิตในเยาวราชทั้งกลางวันและกลางคืน สายถ่ายรูปต้องห้ามพลาด </p>
+
+    <!--1-->
+    <span style="color: teal; font-weight: bold;">1. วงเวียนโอเดียน</span>
+    <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <img src="./img/สถานที่ที่ 1.WEBP" alt="bingo" style="width: 100%; border-radius: 10px;">
+  <figcaption style="margin-top: 10px; font-size: 16px; color: #444;">
+    <p><span style=" color: black; font-weight: bold;">วงเวียนโอเดียน</span> ตั้งอยู่ตรงจุดตัดของ ถนนเจริญกรุง ถนนเยาวราช และถนนมิตรภาพไทย-จีน ตรงจุดนี้ ถ่ายรูปสวยๆ กันได้เลย ตรงวงเวียนยังมี <span style="color: black; font-weight: bold;">ซุ้มประตูวัฒนธรรมไทย - จีน </span> ที่ดูมีมนต์ขลังมากๆ เป็นสัญลักษณ์ของ ไชน่าทาวน์ในกรุงเทพฯ เลยก็ว่าได้</p>
+  <p style="margin-bottom: 20px;" </p>
+  <div class="text-box">
+  <span style="margin-top: 10px; font-size: 16px; color: #444;"><p>ที่อยู่ : ถนนตรีมิตร แขวงตลาดน้อย เขตสัมพันธวงศ์ กรุงเทพฯ<p></span>
+พิกัด : <a  link href="https://maps.app.goo.gl/KnELUawiR9eLJH3V9" >https://maps.app.goo.gl/KnELUawiR9eLJH3V9</a><p>
+เปิดให้เข้าชม : สามารถเที่ยวชมได้ตลอดทั้งวัน<p>
+โทร : -<p>
+เว็บไซต์ : -
+</p>
+<p style="margin-bottom: 20px;" ></p>
+</div>
+  </figcaption>
+</figure>
+<p style="margin-bottom: 40px;" >===============</p>
+
+<!--2-->
+<span style="color: teal; font-weight: bold;">2. ถนนเยาวราชและสตรีทฟู้ด</span>
+    <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <img src="./img/สถานที่ที่ 2.WEBP" alt="bingo" style="width: 100%; border-radius: 10px;">
+  <figcaption style="margin-top: 10px; font-size: 16px; color: #444;">
+    <p>เสน่ห์ของ<span style=" color: black; font-weight: bold;">ถนนเยาวราช</span> ที่ทำให้เป็นที่รู้จักไปทั่วโลกก็คือ<span style="color: black; font-weight: bold;">สตรีทฟู้ดเยาวราช </span> นั่นเอง แน่นอนว่า ทันทีที่แสงอาทิตย์ลับขอบฟ้าไป จะถูกแทนที่ด้วยแสงไฟสว่างไสว ป้ายไฟสีแดง สีเหลืองไปทั่วบริเวณทั้งย่านเยาวราช เหมือนชีวิตอีกโลกได้ตื่นขึ้นแล้ว เพราะฉะนั้น นอกจากไปถ่ายรูปสวยๆ ฟีลฮ่องกงกันแล้ว อย่าลืมแวะชิมของอร่อยเจ้าเด็ดกันด้วยนะ!</p>
+  
+  <p style="margin-bottom: 20px;" </p>
+  <div class="text-box">
+  <span style="margin-top: 10px; font-size: 16px; color: #444;"><p>ที่อยู่ : ถนนเยาวราช เขตสัมพันธวงศ์ กรุงเทพฯ<p></span>
+พิกัด : <a  link href="https://maps.app.goo.gl/T5DrWbmvoHb4crAF8" >https://maps.app.goo.gl/T5DrWbmvoHb4crAF8</a><p>
+เปิดให้เข้าชม : สามารถเที่ยวชมได้ตลอดทั้งวัน<p>
+โทร : -<p>
+เว็บไซต์ : -
+</p>
+<p style="margin-bottom: 20px;" ></p>
+</div>
+</figcaption>
+</figure>
+<p style="margin-bottom: 40px;" >===============</p>
+
+
+<!--3-->
+<span style="color: teal; font-weight: bold;">3. MRT วัดมังกร</span>
+    <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <img src="./img/สถานที่ที่ 3.WEBP" alt="bingo" style="width: 100%; border-radius: 10px;">
+  <figcaption style="margin-top: 10px; font-size: 16px; color: #444;">
+    <p>มุมไฮไลท์ที่พลาดไม่ได้เลยที่ เยาวราช อีกแห่งก็คือการมาถ่ายรูปที่<span style=" color: black; font-weight: bold;">MRT สถานีวัดมังกร</span> ด้านในสถานีมีชีวติชีวามากๆ ด้วย<span style="color: black; font-weight: bold;">สตรีท อาร์ท </span> ที่อยู่ตามมุมต่างๆ ของสถานีนั่นเอง อีกทั้งเป็นภาพวาดสตรีทอาร์ตที่มีเอกลักษณ์ต่างจากที่อื่นๆ ในสไตล์ชิโนโปรตุกีส ซึ่งเข้ากันกับความเป็นเยาวราชได้อย่างดี</p>
+  
+  <p style="margin-bottom: 20px;" </p>
+  <div class="text-box">
+  <span style="margin-top: 10px; font-size: 16px; color: #444;"><p>ที่อยู่ : ถนนเจริญกรุง เขตสัมพันธวงศ์ กรุงเทพฯ<p></span>
+พิกัด : <a  link href="https://maps.app.goo.gl/CCGc9yqnXgLuiY6J6" >https://maps.app.goo.gl/CCGc9yqnXgLuiY6J6</a><p>
+เปิดให้เข้าชม : 06.00-24.00 น.<p>
+โทร : 0-2225-4245<p>
+เว็บไซต์ : <a  link href="https://www.facebook.com/iamchinatownbkk" >https://www.facebook.com/iamchinatownbkk</a><p>
+</p>
+<p style="margin-bottom: 20px;" ></p>
+</div>
+</figcaption>
+</figure>
+<p style="margin-bottom: 40px;" >===============</p> 
+
+<!--4-->
+<span style="color: teal; font-weight: bold;">4. I'm Chinatown</span>
+    <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <img src="./img/สถานที่ที่ 4.WEBP" alt="bingo" style="width: 100%; border-radius: 10px;">
+  <figcaption style="margin-top: 10px; font-size: 16px; color: #444;">
+    <p><span style=" color: black; font-weight: bold;">I'm Chinatown</span> เป็นมิกซ์ยูสใจกลางเยาวราช เป็นทั้งแหล่งกินแหล่งช้อป มีร้านค้าชั้นนำมากมาย ทุกไลฟ์สไตล์รวมไว้ที่เดียว และที่สำคัญ ก็มีมุมสวยๆ ให้ได้เดินถ่ายรูปกันด้วย ตั้งแต่ด้านหน้าที่มี โคมสีแดงต่างๆ จนถึงด้านใน ใครผ่านไปย่านเยาวราช แวะถ่ายรูปกันได้เลย</p>
+  
+  <p style="margin-bottom: 20px;" </p>
+  <div class="text-box">
+  <span style="margin-top: 10px; font-size: 16px; color: #444;"><p>ที่อยู่ : 531 ถนนเจริญกรุง แขวงป้อมปราบ เขตป้อมปราบศัตรูพ่าย กรุงเทพฯ<p></span>
+พิกัด : <a  link href="https://maps.app.goo.gl/ReyEziisSHgxcxyd7" >https://maps.app.goo.gl/ReyEziisSHgxcxyd7</a><p>
+เปิดให้เข้าชม : 10.00-21.00 น.<p>
+โทร : 0-2225-4245<p>
+เว็บไซต์ : <a  link href="https://www.facebook.com/iamchinatownbkk" >https://www.facebook.com/iamchinatownbkk</a><p>
+</p>
+<p style="margin-bottom: 20px;" ></p>
+</div>
+</figcaption>
+</figure>
+<p style="margin-bottom: 40px;" >===============</p>
+
+<!--5-->
+<span style="color: teal; font-weight: bold;">5. โรงแรมเซี่ยงไฮ้แมนชั่น Shanghai Mansion Bangkok</span>
+    <figure style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <img src="./img/สถานที่ที่ 5.WEBP" alt="bingo" style="width: 100%; border-radius: 10px;">
+  <figcaption style="margin-top: 10px; font-size: 16px; color: #444;">
+    <p><span style=" color: black; font-weight: bold;">โรงแรมเซี่ยงไฮ้แมนชั่น</span> หรือ <span style=" color: black; font-weight: bold;">Shanghai Mansion Bangkok</span> เป็นโรงแรมเก่าแก่ที่ตั้งอยู่ในย่านเยาวราชมาอย่างยาวนาน เสน่ห์ของที่นี่ก็คือ ระย้าโคมสีแดงที่เรียงตัวกันสวยงาม ให้บรรยากาศเมืองจีน และมุมสวยๆ ที่มีทั้งความเก่าแก่และโมเดิร์น เรียกได้ว่า ทำให้นึกถึง เซี่ยงไฮ้ และหนังอาร์ตๆ ของ หว่อง กา ไว เลยทีเดียว ใครที่เดินเที่ยวเยาวราชจนเหนื่อย แวะมาจิบเครื่องดื่มเบาๆ ที่บาร์ สไตล์เซี่ยงไฮ้ ถ่ายรูปเก๋ๆ กลับไป</p>
+  
+  <p style="margin-bottom: 20px;" </p>
+  <div class="text-box">
+  <span style="margin-top: 10px; font-size: 16px; color: #444;"><p>ที่อยู่ : ถนนเยาวราช เขตสัมพันธวงศ์ กรุงเทพฯ<p></span>
+พิกัด : <a  link href="https://maps.app.goo.gl/k751PC7FgHKHaGJn6" >https://maps.app.goo.gl/k751PC7FgHKHaGJn6</a><p>
+เปิดให้เข้าชม : สามารถเที่ยวชมได้ตลอดทั้งวัน<p>
+โทร : 0-2221-2121<p>
+เว็บไซต์ : <a  link href="https://www.facebook.com/ShanghaiMansionBangkok" >https://www.facebook.com/ShanghaiMansionBangkok</a><p>
+</p>
+<p style="margin-bottom: 20px;" ></p>
+</div>
+</figcaption>
+</figure>
+<p style="margin-bottom: 60px;" >===============</p>
+
+</div>
+
+ <!-- Footer -->

@@ -1,0 +1,312 @@
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<title>Yaowarat Road</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body style="background-color: rgb(236, 195, 190);"></body>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: white;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+      color: #004080;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background-color: black;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+    
+  
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+        border-top: 1px solid #ccc;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    .content {
+      padding: 30px;
+      height: 1500px;
+    }
+         footer {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.slider {
+      width: 600px;
+      height: 400px;
+      overflow: hidden;
+      margin: auto;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 1s ease;
+    }
+
+    .slides img {
+      width: 600px;
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./img/Logo.PNG" alt="โลโก้กลุ่ม">
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="http://127.0.0.1:5500/Homepage.html">หน้าแรก</a></li>
+      <li><a href="http://127.0.0.1:5500/food.html">ร้านอาหาร</a></li>
+      <li><a href="http://127.0.0.1:5500/dessert.html">ร้านขนม</a></li>
+      <li><a href="http://127.0.0.1:5500/photo.html">จุดถ่ายรูป</a></li>
+      <li><a href="http://127.0.0.1:5500/aboutus.html">เกี่ยวกับเรา</a></li>
+    </ul>
+  </nav>
+<div class="content-center">
+  <div style="text-align: center;">
+    <h1  style="color: #851f1f;"  > ร้านขนมย่านเยาวราช</h1>
+    <p>ร้านขนมย่านเยาวราช ร้านดัง ร้านเด็ดที่สายของหวานไม่ควรพลาด</p>
+  </div>
+  <div class="slider">
+    <div class="slides" id="slide-container">
+      <img src="img/yao.jpg" alt="รูป 0">
+      <img src="img/st.jpg" alt="รูป 1">
+      <img src="img/pp2.jpg" alt="รูป 2">
+      <img src="img/th.jpg" alt="รูป 3">
+      <img src="img/bh3.jpg" alt="รูป 4">
+    </div>
+  </div>  
+<br>
+  <div class="content-center">
+    <div style="text-align: center;">
+<h2 style="color: #851f1f;" >1.Sweettime</h2>
+<br>
+    <img src="img/st.jpg"  width="600px" height="400px" ><br>
+    <br>
+    <img src="img/st1.jpg"width="600px" height="400px" ><br>
+    <br>
+    <img src="img/st2.jpg" width="350px" height="400px" ><br>
+    <br>
+    <img src="img/st3.jpg" width="400px" height="400px" ><br>
+    
+    <div style="padding: 100px;">
+<p>สวีท ไทม์ (Sweet Time) ร้านขนมหวานเยาวราชที่ราคาไม่ถึงหนึ่งร้อยบาท! มีเมนูขนมหวานทั้งร้อนและเย็นมากมาย  ไม่ว่าจะเป็นบัวลอยนมสด,  บัวลอยงาดำน้ำขิง,  เต้าทึง, พุดดิ้งมะพร้าวอ่อน, ลอดช่องวัดเจษ ,ทับทิมกรอบ และมีเมนูของหวานอีกมากมายให้ได้ลอง</p>
+<p>พิกัด : ถนนเยาวราชฝั่งซ้าย ตรงข้ามโรงแรม Hotel Royal Bangkok, Bangkok, Thailand 10100
+  <br>
+  <a href="https://maps.app.goo.gl/FRhhXSeSxJuWy4E89">คลิกเพื่อดูเส้นทาง</a>
+   <br>
+   เวลาเปิด-ปิด : อังคาร-อาทิตย์ 18:00-01:30 น. 
+   <br>
+   เว็บไซต์ : <a href="https://www.facebook.com/Sweettimechinatown/?locale=th_TH" target="_blank">https://www.facebook.com/Sweettimechinatown/?locale=th_TH</a>
+</p>
+    </div>   
+
+<h2 style="color: #851f1f;" >2.โรงเต้าหู้</h2>
+<br>
+    <img src="img/th2.jpg" width="400px" height="400px" ><br>
+    <br>
+    <img src="img/th1.jpg" width="600px" height="400px" ><br>
+    <br>
+    <img src="img/th.jpg"  width="700px" height="400px" ><br>
+    <br>
+    <img src="img/th3.jpeg" width="600px" height="400px"><br>
+    <div style="padding: 100px;">
+  <p>โรงเต้าหู้ (Tofu Factory) แค่ได้ยินชื่อก็น่าจะพอเดาได้ว่าร้านของเขาวัตถุดิบหลักคืออะไร นี่ร้านขนมหวานจากเต้าหู้ คาเฟ่ย่านเยาวราชที่มาในสไตล์จีนๆ เน้นเมนูจากเต้าหู้ จะมีเมนูทั้งร้อนและเย็น มีเมนูน้ำแข็งไสมีท็อปปิ้งให้เลือกได้หลากหลาย ทั้งโอวัลติน แปะก๊วย รากบัว บัวลอยงาดำ ถั่วแดง และเฉาก๊วย สามารถเลือกใส่ได้ทั้งน้ำเต้าหู้ น้ำลำไย และนมสด นอกจากนี้ก็ยังมีน้ำเต้าหู้ทรงเครื่อง ขนมปังสังขยา ไอศกรีมโบราณ และเต้าหู้ทอด </p>
+<p>พิกัด : ถ.พลับพลาชัย แขวงป้อมปราบ เขตป้อมปราบศัตรูพ่าย, Bangkok, Thailand, Bangkok
+  <br>
+  <a href="https://maps.app.goo.gl/cEPVnHjYSKovedh78">คลิกเพื่อดูเส้นทาง</a>
+   <br>
+   เวลาเปิด-ปิด : ทุกวัน 09.00-22.00 น.
+   <br>
+   เว็บไซต์ : <a href="https://www.facebook.com/Tofufactorychinatown/" target="_blank">https://www.facebook.com/Tofufactorychinatown/</a>
+</p>
+    </div>
+<h2 style="color: #851f1f;" >3.Nam Dao Huu</h2>
+<br>
+    <img src="img/nd.jpg"  width="400px" height="500px"><br>
+    <br>
+    <img src="img/nd2.jpg" width="600px" height="400px"><br>
+    <br>
+    <img src="img/nd3.png" width="600px" height="400px"><br>
+    <div style="padding: 100px;">
+    <p> ร้าน Nam Dao Huu พิกัดอยู่ที่เยาวราช (ถนนแปลงนาม) และนี่เป็นอีกหนึ่งร้านที่สายรักสุขภาพและเป็นสายเต้าหู้ต้องมาลองสักครั้งในชีวิต เมนูน่าทานนอกจากน้ำเต้าหู้ก็ยังมีทั้งบัวลอย เต้าหวย เมนูเด็ดไม่ควรพลาด เช่น น้ำเต้าหู้ใส่ไข่ลวก, น้ำเต้าหู้เย็น, น้ำเต้าหู้ทรงเครื่อง บัวลอยไข่เค็ม, บัวลอยทุเรียน และเต้าฮวยมันม่วงน้ำขิง  </p>
+<p>พิกัด : ซอยแปลงนาม เยาวราช กรุงเทพมหานคร
+  <br>
+  <a href="https://maps.app.goo.gl/SpS9cG5aXQRF5jWu8">คลิกเพื่อดูเส้นทาง</a>
+   <br>
+   เวลาเปิด-ปิด : วันจันทร์-วันพฤหัสบดี 08.00-22.00 น. วันศุกร์-วันอาทิตย์ 08.00-23.00 น.
+   <br>
+   เว็บไซต์ : <a href="https://www.facebook.com/NamDaoHuuu/?locale=th_TH" target="_blank">https://www.facebook.com/NamDaoHuuu/?locale=th_TH</a>
+</p>
+    </div>
+<h2 style="color: #851f1f;" >4.Ba Hao Tian Mi</h2>
+<br>
+    <img src="img/bh.jpg"  width="600px" height="400px"><br>
+    <br>
+    <img src="img/bh1.jpg" width="600px" height="400px"><br>
+    <br>
+    <img src="img/bh2.jpg" width="600px" height="400px"><br>
+    <br>
+    <img src="img/bh3.jpg" width="600px" height="400px"><br>
+    <div style="padding: 100px;">
+    <p>ร้านปาเฮ่าเถียนมี่ (Ba Ha o Tian Mi) ใครว่าเยาวราชมีแต่เมนูบัวลอยน้ำเต้าหู้หรือขนมปัง วันนี้เราจะมาลองอะไรใหม่ๆอย่างพุดดิ้ง! คาเฟ่สไตล์จีนเปิดใหม่ ที่มีเมนูพุดดิ้งฮ่องกง มาเก๊า เมนูของที่นี่มีให้ได้ลองหลากหลาย อย่าง พุดดิ้งงาดำ พุดดิ้งชานมไข่มุก ฯลฯ นอกจากนี้เขายังเมนูพุดดิ้งตามฤดูกาล หน้าร้อนแบบนี้ต้อง พุดดิ้งมะม่วงใครสายมะม่วงต้องห้ามพลาด!</p>
+<p>พิกัด : ถ.ผดุงด้าว ซ.สุกี้เท็กซัส เยาวราช กรุงเทพฯ
+   <br>
+   <a href="https://maps.app.goo.gl/69RJyym1RjaXnEND7">คลิกเพื่อดูเส้นทาง</a>
+   <br>
+   เวลาเปิด-ปิด : 15.00 - 21.00 น. (หยุดทุกวันพุธ)
+   <br>
+   เว็บไซต์ : <a href="https://www.facebook.com/bahaotianmi/?locale=th_TH" target="_blank">https://www.facebook.com/bahaotianmi/?locale=th_TH</a>
+</p>
+    </div>
+<h2 style="color: #851f1f;" >5.ขนมปังเจ้าอร่อยเด็ดเยาวราช</h2>
+<br>
+    <img src="img/pp.jpg"  width="400px" height="400px"><br>
+    <br>
+    <img src="img/pp2.jpg" width="600px" height="400px"><br>
+    <br>
+    <img src="img/pp4.png" width="600px" height="400px"><br>
+    <br>
+    <img src="img/pp1.jpg" width="400px" height="400px"><br>
+    <div style="padding: 100px;">
+<p>ร้านขนมปังที่หลายๆคนคงคุ้นเคย อาจจะเห็นผ่านตาร้านขนมปังปิ้งสอดไส้แยมต่างๆที่ไม่ต้องต้องมาถึงเยาวราชก็มีให้ทุกคนได้ลองกิน! ขนมปังร้อนๆ หอมกรุ่นจากเตาแห่งนี้ มีให้เลือก 3 อย่างคือ 1. กรอบ 2. นิ่ม 3. กรอบนอกนุ่มใน คิวยาวจนทางร้านต้องแจกบัตรคิว รสชาติที่ฮิตคือ เนยราดแยมส้ม เนยราดถั่ว เนยราดช็อกโกแลต ใครอยากทานขนมปัง และเครื่องดื่ม กาแฟ โอวัลติน นมสด โกโก้ ราคาเริ่มต้นที่ 25 บาท</p>
+<p>พิกัด : ถนน เยาวราช กรุงเทพมหานคร (ร้านตั้งอยู่หน้าธนาคารออมสิน ใกล้กับร้านเซี้ยหูฉลาม) 
+  <br>
+  <a href="https://maps.app.goo.gl/Z2SSYrn7S1DgUyqL9">คลิกเพื่อดูเส้นทาง</a>
+   <br>
+   เวลาเปิด-ปิด : 17.00-00.00 น. (ปิดวันจันทร์)
+   <br>
+   เว็บไซต์ : <a href="https://www.facebook.com/ChinatownYaowarat/?locale=th_TH" target="_blank">https://www.facebook.com/ChinatownYaowarat/?locale=th_TH</a>
+</p>
+    </div>
+</div>
+</div>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+  
+  <!--footer-->
+  <footer>
+    <p>จัดทำโดย กลุ่ม Webtorung</p>
+    <p>สมาชิก: ภูริวัฑฒ์ | ปาลิกา | ทรรศนีย์พร | กมลชนก</p>
+    <p>Email: webtorung@gmail.com</p>
+    <p>&copy; สำหรับโปรเจคกลุ่มรายวิชา 520112-165.</p>
+  </footer>
+  <script>
+    const slides = document.getElementById('slide-container');
+    const totalSlides = slides.children.length;
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % totalSlides;
+      slides.style.transform = `translateX(-${index * 600}px)`;
+    }, 3000); // เปลี่ยนทุก 3 วินาที
+  </script>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+</body>
